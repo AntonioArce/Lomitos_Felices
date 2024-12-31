@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>Lomitos Felices - Registro</title>
+  <link rel="stylesheet" href="css/registro.css">
+</head>
+
+<body>
+  <header>
+    <img src="images/logo.png" alt="logo" class="logo_header" id="logo_header">
+    <nav class="btns">
+      <button onclick="location.href='index.html'" class="btn">Inicio</button>
+      <button onclick="location.href='./conocelos.html'" class="btn">¡Conócelos!</button>
+      <button onclick="location.href='./informate.html'" class="btn">Infórmate</button>
+      <button onclick="location.href='./contacto.html'" class="btn">Contacto</button>
+      <button onclick="location.href='login.html'" class="btn_perfil">Perfil</button>
+    </nav>
+  </header>
+  <div class="background_form">
+    <form action="php/F_Us/registro.php" method="post" id="registro_nuevo">
+        <div class="container">
+          <h1>Registro</h1>
+            <fieldset>
+              <h2>Personal</h2>
+              <label for="nombre">Nombre</label>
+              <input type="text" name="nombre" class="field" required="true">
+              <label for="a_pat">Apellido Paterno</label>
+              <input type="text" name="a_pat"class="field" required="true">
+              <label for="a_mat">Apellido Materno</label>
+              <input type="text" name="a_mat" class="field" required="true">
+              <label for="f_nac">Fecha de Nacimiento</label>
+              <input type="date" name="f_nac" class="field" required="true">
+              <label for="rfc">RFC</label>
+              <input type="text" name="rfc" class="field" required="true">
+            </fieldset>
+    
+            <fieldset>
+              <h2>Cuenta</h2>
+              <label for="correo">Correo</label>
+              <input type="email" name="correo" class="field" placeholder="Ej: tu@correo.com" required="true">
+              <label for="password1">Contraseña</label>
+              <input type="password" name="password1" class="field" required="true" minlength="8">
+              <label for="password2">Confirmar Contraseña</label>
+              <input type="password" name="password2" class="field" required="true" minlength="8">
+            </fieldset>
+    
+            <fieldset>
+              <h2>Contacto</h2>
+              <label for="calle">Calle</label>
+              <input type="text" name="calle" class="field" required="true">
+              <label for="num_int">No. int</label>
+              <input type="number" name="num_int" class="field" required="true">
+              <label for="num_ext">No. ext</label>
+              <input type="text" name="num_ext" class="field" required="true">
+              <label for="colonia">Colonia</label>
+              <input type="text" name="colonia" class="field" required="true">
+              <label for="cp">C.P.</label>
+              <input type="number" name="cp" class="field" required="true">
+              <br>
+              <label for="alcaldia">Alcaldía</label>
+              <input type="text" name="alcaldia" class="field" required="true">
+              <label for="estado">Estado</label>
+              <input type="text" name="estado" class="field" required="true">
+              <label for="telefono">Teléfono</label>
+              <input type="tel" name="telefono" class="field" placeholder="Ej: 55555555" required="true">
+            </fieldset>
+              <input type="submit" name="submit_registro" id="submit_registro" class="field" value="Registrar">
+        </div>
+      </form>
+  </div>
+<footer>
+  Copyright &#169; 
+  <script type='text/javascript'>
+    var creditsyear = new Date();document.write(creditsyear.getFullYear());
+  </script>
+  Lomitos Felices
+</footer>
+</body>
+
+</html>
